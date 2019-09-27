@@ -19,8 +19,8 @@ public class Account {
     @Id
     private String id;
     @CreatedDate
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd-MM-yyyy mm:ss")
-    private LocalDateTime creationDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd-MM-yyyy")
+    private LocalDate creationDate;
     private Double amount;
     private Currency currency;
 }
